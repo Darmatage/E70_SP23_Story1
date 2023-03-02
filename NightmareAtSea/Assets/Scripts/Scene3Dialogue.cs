@@ -66,7 +66,7 @@ public void next(){
                 Char2name.text = "Seagull";
                 Char2speech.text = "Hello, what is your name?";
         }
-       else if (primeInt ==3){
+       else if (primeInt == 3){
                 Char1name.text = "YOU";
                 Char1speech.text = "Whoa, you can talk?";
                 Char2name.text = "";
@@ -76,12 +76,12 @@ public void next(){
        else if (primeInt == 4){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I know I did not hit you that hard.";
+                Char2name.text = "Seagull";
+                Char2speech.text = "Of course, I can talk. Haven’t you ever seen a talking Seagull before?";
         }
        else if (primeInt == 5){
                 Char1name.text = "YOU";
-                Char1speech.text = "Hit me? Why?";
+                Char1speech.text = "No, never.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
@@ -89,20 +89,8 @@ public void next(){
        else if (primeInt == 6){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
-        }
-       else if (primeInt ==7){
-                Char1name.text = "YOU";
-                Char1speech.text = "Why do you think I know anything?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 8){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not play the stupid. You will take me to him.";
+                Char2name.text = "Seagull";
+                Char2speech.text = "Perhaps you should get out more and see the world.";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -111,33 +99,83 @@ public void next(){
         }
 
 // ENCOUNTER AFTER CHOICE #1
-       else if (primeInt == 100){
+       else if (primeInt == 8){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Then you are no use to me, and must be silenced.";
+                Char2name.text = "Seagull";
+                Char2speech.text = "Well, I’m glad you made it. At least I have someone to talk to.";
+                primeInt = 14;
         }
-       else if (primeInt == 101){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Come back here! Do not think you can hide from me!";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-        }
+//        else if (primeInt == 101){
+//                 Char1name.text = "";
+//                 Char1speech.text = "";
+//                 Char2name.text = "Seagull";
+//                 Char2speech.text = "Come back here! Do not think you can hide from me!";
+//                 nextButton.SetActive(false);
+//                 allowSpace = false;
+//                 NextScene1Button.SetActive(true);
+//         }
 
-       else if (primeInt == 200){
+       else if (primeInt == 11){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
+                Char2name.text = "Seagull";
+                Char2speech.text = "Have you looked in a  mirror lately? You don’t look much better.";
+                primeInt = 14;
         }
-       else if (primeInt == 201){
+       else if (primeInt == 15){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Seagull";
+                Char2speech.text = "At least you fared better than this half-frozen person.";
+        }
+       else if (primeInt == 16){
                 Char1name.text = "YOU";
-                Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+                Char1speech.text = "That is very sad to see.";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+       else if (primeInt == 17){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Seagull";
+                Char2speech.text = "Don’t pity him too much I don’t think he was very smart.";
+        }
+       else if (primeInt == 18){
+                Char1name.text = "YOU";
+                Char1speech.text = "That is not very nice. Besides, why do you say that?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 19){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Seagull";
+                Char2speech.text = "I found him holding on to this door. That door could easily have held two people.  There was no need for anyone to die.";
+        }
+       else if (primeInt == 20){
+                Char1name.text = "YOU";
+                Char1speech.text = "True. By the way, where am I and is there a way out of here?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 21){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Seagull";
+                Char2speech.text = "Well, you can explore the island or swim to another island. Unless you can fly?";
+                nextButton.SetActive(false);
+                allowSpace = false;
+                NextScene2Button.SetActive(true);
+                NextScene1Button.SetActive(true);
+
+        }
+
+        else if (primeInt == 16){
+                Char1name.text = "YOU";
+                Char1speech.text = "";
+                Char2name.text = "Seagull";
+                Char2speech.text = "At least you fared better than this half-frozen person.";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
@@ -148,10 +186,10 @@ public void next(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch-scenes)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "I don't know what you're talking about!";
+                Char1speech.text = "I was trying to but my Ship sank.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 99;
+                primeInt = 7;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
@@ -159,10 +197,10 @@ public void next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Sure, anything you want... just lay off the club.";
+                Char1speech.text = "What do you know? You’re just a  flying a  rat!";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 199;
+                primeInt = 10;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
@@ -170,9 +208,9 @@ public void next(){
         }
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene3");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene2");
         }
 }

@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_Text
-      value: Scene change 2
+      value: Swim Away
       objectReference: {fileID: 0}
     - target: {fileID: 1775541172388322630, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -401,7 +401,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_Text
-      value: Story choice 1a
+      value: Agree
       objectReference: {fileID: 0}
     - target: {fileID: 1775541172388322630, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -671,7 +671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_Text
-      value: Story choice 1b
+      value: Respond Bitterly
       objectReference: {fileID: 0}
     - target: {fileID: 1775541172388322630, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1261,7 +1261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_Text
-      value: Scene Change 1
+      value: Explore Island
       objectReference: {fileID: 0}
     - target: {fileID: 1775541172388322630, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
