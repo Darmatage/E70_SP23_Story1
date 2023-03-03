@@ -190,6 +190,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &404661565 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5986279343515148079, guid: fbb28f9b1954b45f88eab7f481e61ed8, type: 3}
+  m_PrefabInstance: {fileID: 1939275240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &438267448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,6 +1305,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3427641551802639281, guid: 1ac91f85d5ec8254ba223a533bc50e1e, type: 3}
+      propertyPath: pauseMenuUI
+      value: 
+      objectReference: {fileID: 404661565}
     - target: {fileID: 7636836218977127882, guid: 1ac91f85d5ec8254ba223a533bc50e1e, type: 3}
       propertyPath: m_Name
       value: GameHandler
