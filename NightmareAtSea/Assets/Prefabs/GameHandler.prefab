@@ -44,3 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aadb4fcd277d6b4ba83eadea2ccdabc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 0}
+  mixer: {fileID: 24100000, guid: 00dbb024da6c44e55a2d9e91710dfca3, type: 2}
