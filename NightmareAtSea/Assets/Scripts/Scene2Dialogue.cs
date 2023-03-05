@@ -77,19 +77,18 @@ public void next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Cory";
-                Char2speech.text = "Hi, I am Cory and I am looking for my friend Nimwit. He is a little smaller than me and has orange and white stripes.";
+                Char2speech.text = "Hi, I am Cory and I am looking for my friend Nimwit.";
+        }
+       else if (primeInt == 5){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Cory";
+                Char2speech.text = " He is a little smaller than me and has orange and white stripes.";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+                Choice1b.SetActive(true); // function Choice1bFunct()        
         }
-//        else if (primeInt == 5){
-//                 Char1name.text = "YOU";
-//                 Char1speech.text = "No, never.";
-//                 Char2name.text = "";
-//                 Char2speech.text = "";
-//                 //gameHandler.AddPlayerStat(1);
-//         }
 //        else if (primeInt == 6){
 //                 Char1name.text = "";
 //                 Char1speech.text = "";
@@ -104,20 +103,20 @@ public void next(){
 
 // ENCOUNTER AFTER CHOICE #1
 // 1a Dialogue 
-       else if (primeInt == 6){
+       else if (primeInt == 7){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Cory";
                 Char2speech.text = "Sorry, I am very forgetful.  What are you doing out here on the reef?";
         }
 
-       else if (primeInt == 7){
+       else if (primeInt == 8){
                 Char1name.text = "YOU";
                 Char1speech.text = "I am trying to swim to one of those islands.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 8){
+       else if (primeInt == 9){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Cory";
@@ -153,7 +152,7 @@ public void next(){
                 Char1speech.text = "I just said no to that question.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 5;
+                primeInt = 6;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
