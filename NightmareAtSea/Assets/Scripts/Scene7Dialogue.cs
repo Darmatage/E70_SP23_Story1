@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene6Dialogue : MonoBehaviour {
+public class Scene7Dialogue : MonoBehaviour {
         public int primeInt = 1;         // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
@@ -61,20 +61,20 @@ public void next(){
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Oompa";
-                Char2speech.text = "Oompa Loompa Doompadee doo, I’ve got a perfect puzzle for you.";
+                Char2name.text = "Ameila";
+                Char2speech.text = "Howdy!";
         }
        else if (primeInt == 3){
                 Char1name.text = "YOU";
-                Char1speech.text = "Pardon me, excuse me.";
+                Char1speech.text = "Thank god, a human at last. What is your name?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 4){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Oompa";
-                Char2speech.text = "Oh, hi there. How can I help you?";
+                Char2name.text = "Ameila";
+                Char2speech.text = "Can’t you read, it is Ameila Earhart.";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -101,46 +101,26 @@ public void next(){
        else if (primeInt == 9){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Oompa";
-                Char2speech.text = "No thanks, the last person I helped took all my Cocoa Beans!";
+                Char2name.text = "Ameila";
+                Char2speech.text = "Sorry, no can do. I love it here and don’t want to back to the hustle and bustle of life. You should join me.";
         }
 
        else if (primeInt == 10){
                 Char1name.text = "YOU";
-                Char1speech.text = "I don’t need any Cocoa Beans. I just want to get off this island.";
+                Char1speech.text = "I need to get back to my family!";
                 Char2name.text = "";
                 Char2speech.text = "";
+                nextButton.SetActive(false);
+                allowSpace = false;
+                NextScene2Button.SetActive(true);
+                NextScene1Button.SetActive(true);
         }
 
         else if (primeInt == 11){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Oompa";
-                Char2speech.text = "Good luck with that.";
-        }
-        else if (primeInt == 12){
-                Char1name.text = "YOU";
-                Char1speech.text = "So, you can’t help me?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 13){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Oompa";
-                Char2speech.text = "I wouldn’t say I can’t help you.";
-        }
-        else if (primeInt == 14){
-                Char1name.text = "YOU";
-                Char1speech.text = "So, you can help me?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 15){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Oompa";
-                Char2speech.text = "I wouldn’t say that either.";
+                Char2name.text = "Ameila";
+                Char2speech.text = "Sorry, no can do. I love it here and don’t want to back to the hustle and bustle of life. You should join me.";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
@@ -148,47 +128,54 @@ public void next(){
         }
 
 // 1b Dialogue 
+       else if (primeInt == 13){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ameila";
+                Char2speech.text = "Are you talking to me?";
+        }
+       else if (primeInt == 14){
+                Char1name.text = "YOU";
+                Char1speech.text = "Sort of, how old are you?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 15){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ameila";
+                Char2speech.text = "About 126 years old.";
+        }
+       else if (primeInt == 16){
+                Char1name.text = "YOU";
+                Char1speech.text = "That is impossible.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
        else if (primeInt == 17){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Oompa";
-                Char2speech.text = "Did you talk to a talking Sea Gull?";
+                Char2name.text = "Ameila";
+                Char2speech.text = "Diet and exercise is all it takes.";
         }
        else if (primeInt == 18){
                 Char1name.text = "YOU";
-                Char1speech.text = "Yes.";
+                Char1speech.text = "I need to keep looking for a way off this island.";
                 Char2name.text = "";
                 Char2speech.text = "";
-        }
-       else if (primeInt == 19){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Oompa";
-                Char2speech.text = "Did you talk to a wise old turtle?";
-        }
-       else if (primeInt == 20){
-                Char1name.text = "YOU";
-                Char1speech.text = "Yes.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 21){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Oompa";
-                Char2speech.text = "Then I agree, you are crazy.";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
                 NextScene1Button.SetActive(true);
         }
+
 	//KEEP THE MOST HOLY FINAL BRACKETT:
      }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch-scenes)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Can you help me get off this island.";
+                Char1speech.text = "Does that plane work?  Can you fly me back to civilization?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 8;
@@ -199,10 +186,10 @@ public void next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "This is crazy. I can’t believe I am talking to an Oompa Loompa.";
+                Char1speech.text = "I must have hit my head harder than I thought. Talking animals. Now I run into Amelia freaking Earhart.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 16;
+                primeInt = 12;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
@@ -211,7 +198,7 @@ public void next(){
 
         public void SceneChange1(){
                 // Goes to the Lemur
-               SceneManager.LoadScene("Scene7");
+               SceneManager.LoadScene("Scene6");
         }
         public void SceneChange2(){
                 // Goes to Death Scene MAYBE?
