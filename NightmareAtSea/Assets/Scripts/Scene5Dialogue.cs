@@ -110,17 +110,41 @@ public void next(){
                 Char1speech.text = "I need to get back to my family!";
                 Char2name.text = "";
                 Char2speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene2Button.SetActive(true);
-                NextScene1Button.SetActive(true);
         }
 
         else if (primeInt == 11){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ameila";
-                Char2speech.text = "Sorry, no can do. I love it here and don’t want to back to the hustle and bustle of life. You should join me.";
+                Char2speech.text = "Good luck!";
+        }
+
+        else if (primeInt == 12){
+                Char1name.text = "YOU";
+                Char1speech.text = "Why does everyone keep saying good luck to me. Is this island haunted or something.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+
+        else if (primeInt == 13){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ameila";
+                Char2speech.text = "You tell me.  Have you seen any dead people yet?";
+        }
+
+        else if (primeInt == 14){
+                Char1name.text = "YOU";
+                Char1speech.text = "That is a good point. I am doomed.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+
+        else if (primeInt == 15){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Ameila";
+                Char2speech.text = "Don’t fret. Before you know it, things will be back to normal.";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
@@ -128,37 +152,37 @@ public void next(){
         }
 
 // 1b Dialogue 
-       else if (primeInt == 13){
+       else if (primeInt == 17){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ameila";
                 Char2speech.text = "Are you talking to me?";
         }
-       else if (primeInt == 14){
+       else if (primeInt == 18){
                 Char1name.text = "YOU";
                 Char1speech.text = "Sort of, how old are you?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 15){
+       else if (primeInt == 19){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ameila";
                 Char2speech.text = "About 126 years old.";
         }
-       else if (primeInt == 16){
+       else if (primeInt == 20){
                 Char1name.text = "YOU";
                 Char1speech.text = "That is impossible.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 17){
+       else if (primeInt == 21){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ameila";
                 Char2speech.text = "Diet and exercise is all it takes.";
         }
-       else if (primeInt == 18){
+       else if (primeInt == 22){
                 Char1name.text = "YOU";
                 Char1speech.text = "I need to keep looking for a way off this island.";
                 Char2name.text = "";
@@ -189,7 +213,7 @@ public void next(){
                 Char1speech.text = "I must have hit my head harder than I thought. Talking animals. Now I run into Amelia freaking Earhart.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 12;
+                primeInt = 16;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
@@ -202,6 +226,6 @@ public void next(){
         }
         public void SceneChange2(){
                 // Goes to Death Scene MAYBE?
-                SceneManager.LoadScene("End_Lose");
+                SceneManager.LoadScene("Scene10");
         }
 }

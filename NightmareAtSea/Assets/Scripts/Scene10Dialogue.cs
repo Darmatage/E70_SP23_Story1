@@ -5,14 +5,12 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene2Dialogue : MonoBehaviour {
+public class Scene10Dialogue : MonoBehaviour {
         public int primeInt = 1;         // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
         public Text Char2name;
         public Text Char2speech;
-       //public Text Char3name;
-       //public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
        public GameObject ArtChar1b;
@@ -63,91 +61,79 @@ public void next(){
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Cory";
-                Char2speech.text = "Hi, I am Cory and I am looking for my friend Nimwit. He is a little smaller than me and has orange and white stripes.";
+                Char2name.text = "Attendant";
+                Char2speech.text = "Are you ok?  I heard someone screaming.";
         }
        else if (primeInt == 3){
                 Char1name.text = "YOU";
-                Char1speech.text = "No, sorry, I have not seen him.";
+                Char1speech.text = "What? I must have been having a nightmare. Thank goodness. I thought I was trapped on an island.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Cory";
-                Char2speech.text = "Hi, I am Cory and I am looking for my friend Nimwit.";
+                Char2name.text = "Attendant";
+                Char2speech.text = "Was it inhabited?";
         }
        else if (primeInt == 5){
+                Char1name.text = "YOU";
+                Char1speech.text = "Yes, I talked to a Seagull, a fish, and a Lemur. I even met Amelia Earhart.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 6){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Cory";
-                Char2speech.text = " He is a little smaller than me and has orange and white stripes.";
+                Char2name.text = "Attendant";
+                Char2speech.text = "That was some dream!";
+                // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()        
+                Choice1b.SetActive(true); // function Choice1bFunct()
         }
-//        else if (primeInt == 6){
-//                 Char1name.text = "";
-//                 Char1speech.text = "";
-//                 Char2name.text = "Seagull";
-//                 Char2speech.text = "Perhaps you should get out more and see the world.";
-//                 // Turn off "Next" button, turn on "Choice" buttons
-//                 nextButton.SetActive(false);
-//                 allowSpace = false;
-//                 Choice1a.SetActive(true); // function Choice1aFunct()
-//                 Choice1b.SetActive(true); // function Choice1bFunct()
-//         }
 
 // ENCOUNTER AFTER CHOICE #1
 // 1a Dialogue 
-       else if (primeInt == 7){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Cory";
-                Char2speech.text = "Sorry, I am very forgetful.  What are you doing out here on the reef?";
-        }
        else if (primeInt == 8){
-                Char1name.text = "YOU";
-                Char1speech.text = "I am trying to swim to one of those islands.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Attendant";
+                Char2speech.text = "They say some dreams are window into the past.";
         }
+
        else if (primeInt == 9){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Cory";
-                Char2speech.text = "Be careful, there are a lot of sharks nearby.";
-        }
-       else if (primeInt == 10){
                 Char1name.text = "YOU";
-                Char1speech.text = "What, did you say sharks?";
+                Char1speech.text = "Is that sand on the floor?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 11){
+
+        else if (primeInt == 10){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Cory";
-                Char2speech.text = "Yes, Sharks. Don’t worry though, they told me they want friends, not food";
+                Char2name.text = "Attendant";
+                Char2speech.text = "How did that get there?";
         }
-       else if (primeInt == 12){
+
+        else if (primeInt == 11){
                 Char1name.text = "YOU";
-                Char1speech.text = "This does not sound like a very good idea.";
+                Char1speech.text = "What is that in my pants pocket?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 13){
+
+        else if (primeInt == 12){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Cory";
-                Char2speech.text = "I hope you are a fast swimmer.";
+                Char2name.text = "Attendant";
+                Char2speech.text = "Check it out.";
         }
-       else if (primeInt == 14){
+
+        else if (primeInt == 13){
                 Char1name.text = "YOU";
-                Char1speech.text = "You are making me very nervous.";
+                Char1speech.text = "OMG, it is the gold coin from the treasure chest!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 nextButton.SetActive(false);
@@ -155,33 +141,57 @@ public void next(){
                 NextScene2Button.SetActive(true);
                 NextScene1Button.SetActive(true);
         }
+
 // 1b Dialogue 
-       else if (primeInt == 16){
+       else if (primeInt == 15){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Cory";
-                Char2speech.text = "He was probably swimming in the East Australian Current. Thanks, I will try to catch them.";
+                Char2name.text = "Attendant";
+                Char2speech.text = "Trust me, it wasn’t real.";
         }
-       else if (primeInt == 17){
+
+       else if (primeInt == 16){
                 Char1name.text = "YOU";
-                Char1speech.text = "Good luck.";
+                Char1speech.text = "How am I supposed to trust anyone?";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+
+        else if (primeInt == 17){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Attendant";
+                Char2speech.text = "It was just a nightmare you fool.";
+        }
+
+       else if (primeInt == 18){
+                Char1name.text = "YOU";
+                Char1speech.text = "I sure hope so. That was scary. I hope this doesn’t happen again.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+
+        else if (primeInt == 19){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Attendant";
+                Char2speech.text = "Good luck with that.";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
                 NextScene1Button.SetActive(true);
         }
+
 	//KEEP THE MOST HOLY FINAL BRACKETT:
      }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch-scenes)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "I just said no to that question.";
+                Char1speech.text = "It all seemed so real.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 6;
+                primeInt = 7;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
@@ -189,10 +199,10 @@ public void next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Yes, I saw him with a bunch of other fish swimming very quickly.";
+                Char1speech.text = "It all seemed so real.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 15;
+                primeInt = 14;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
@@ -200,11 +210,11 @@ public void next(){
         }
 
         public void SceneChange1(){
-                // Goes to the Lemur
-               SceneManager.LoadScene("Scene3");
+                // Goes to the Caves
+               SceneManager.LoadScene("MainMenu");
         }
         public void SceneChange2(){
                 // Goes to Death Scene MAYBE?
-                SceneManager.LoadScene("Scene10");
+                SceneManager.LoadScene("Credits");
         }
 }

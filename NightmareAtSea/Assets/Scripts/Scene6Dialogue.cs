@@ -215,6 +215,6 @@ public void next(){
         }
         public void SceneChange2(){
                 // Goes to Death Scene MAYBE?
-                SceneManager.LoadScene("End_Lose");
+                SceneManager.LoadScene("Scene10");
         }
 }

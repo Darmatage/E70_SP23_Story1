@@ -93,29 +93,72 @@ public void next(){
                 Char1speech.text = "";
                 Char2name.text = "Lemur";
                 Char2speech.text = "I stick to tree bark and leaves mostly. Of course, you can’t go wrong with water.";
-                primeInt = 10;
         }
-// 1b Dialogue 
+       else if (primeInt == 7){
+                Char1name.text = "YOU";
+                Char1speech.text = "What can you tell me about the other options?";
+                Char2name.text = "";
+                Char2speech.text = "";
+       }
        else if (primeInt == 8){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Lemur";
+                Char2speech.text = "The other two options are world famous and people fight over them.";
+        }
+       else if (primeInt == 9){
+                Char1name.text = "YOU";
+                Char1speech.text = "What do they taste like?";
+                Char2name.text = "";
+                Char2speech.text = "";
+       }
+       else if (primeInt == 10){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Lemur";
+                Char2speech.text = "I think they taste like chicken. You should give them a try.";
+        }
+       else if (primeInt == 11){
+                Char1name.text = "YOU";
+                Char1speech.text = "That sounds suspicious.";
+                Char2name.text = "";
+                Char2speech.text = "";
+       }
+       else if (primeInt == 12){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Lemur";
+                Char2speech.text = "Has a lemur ever led you astray?";
+        }
+       else if (primeInt == 13){
+                Char1name.text = "YOU";
+                Char1speech.text = "There is a first time for everything.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 17;
+       }
+
+// 1b Dialogue 
+       else if (primeInt == 15){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Lemur";
                 Char2speech.text = "Of course, I would never lead you astray.";
         }
-       else if (primeInt == 9){
+       else if (primeInt == 16){
                 Char1name.text = "YOU";
                 Char1speech.text = "I don’t know if I should trust a talking Lemur.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-       else if (primeInt == 10){
+       else if (primeInt == 17){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Lemur";
                 Char2speech.text = "Suit yourself, the store will be open all day long.";
         }
 // a & b Dialogue 
-       else if (primeInt == 11){
+       else if (primeInt == 18){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Lemur";
@@ -146,7 +189,7 @@ public void next(){
                 Char1speech.text = "Is this safe to eat? This island has been nothing but a nightmare for me.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 7;
+                primeInt = 14;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
@@ -157,9 +200,9 @@ public void next(){
                SceneManager.LoadScene("Scene4");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("End_Lose");
+                SceneManager.LoadScene("Scene10");
         }
         public void SceneChange3(){
-                SceneManager.LoadScene("End_Lose");
+                SceneManager.LoadScene("Scene10");
         }
 }

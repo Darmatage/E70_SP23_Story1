@@ -198,10 +198,10 @@ public void next(){
 
         public void SceneChange1(){
                 // Goes to the Caves
-               SceneManager.LoadScene("End_Lose");
+               SceneManager.LoadScene("Scene10");
         }
         public void SceneChange2(){
                 // Goes to Death Scene MAYBE?
-                SceneManager.LoadScene("End_Lose");
+                SceneManager.LoadScene("Scene10");
         }
 }

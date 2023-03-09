@@ -111,6 +111,18 @@ public void next(){
                 Char1speech.text = "I will keep that in mind if I ever get off this island.";
                 Char2name.text = "";
                 Char2speech.text = "";
+        }
+       else if (primeInt == 11){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Turtle";
+                Char2speech.text = "That is a big if. Good luck!";
+        }
+       else if (primeInt == 12){
+                Char1name.text = "YOU";
+                Char1speech.text = "That seems ominous.";
+                Char2name.text = "";
+                Char2speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
@@ -192,6 +204,6 @@ public void next(){
         }
         public void SceneChange2(){
                 // Goes to Death Scene MAYBE?
-                SceneManager.LoadScene("End_Lose");
+                SceneManager.LoadScene("Scene10");
         }
 }
