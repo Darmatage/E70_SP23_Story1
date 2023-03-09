@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene7Dialogue : MonoBehaviour {
+public class Scene9Dialogue : MonoBehaviour {
         public int primeInt = 1;         // This integer drives game progress!
         public Text Char1name;
         public Text Char1speech;
@@ -61,20 +61,62 @@ public void next(){
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Seagull";
-                Char2speech.text = "Impressive. You made it this far.";
+                Char2name.text = "Pirate";
+                Char2speech.text = "Boo!";
         }
        else if (primeInt == 3){
                 Char1name.text = "YOU";
-                Char1speech.text = "How did you get here?";
+                Char1speech.text = "Ahhhhh!";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 4){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Seagull";
-                Char2speech.text = "I flew. You really are not very smart.";
+                Char2name.text = "Pirate";
+                Char2speech.text = "Did I scare you?";
+        }
+       else if (primeInt == 5){
+                Char1name.text = "YOU";
+                Char1speech.text = "Yes!!";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 6){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jack";
+                Char2speech.text = "That is what we do! My name is Jack Sparrow, what is yours?";
+        }
+       else if (primeInt == 7){
+                Char1name.text = "YOU";
+                Char1speech.text = "I didn’t think ghosts are real.";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 8){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jack";
+                Char2speech.text = "You probably didn’t think animals could talk either.";
+        }
+       else if (primeInt == 9){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jack";
+                Char2speech.text = "Idiot.";
+        }
+       else if (primeInt == 10){
+                Char1name.text = "YOU";
+                Char1speech.text = "What is inside that ship?";
+                Char2name.text = "";
+                Char2speech.text = "";
+        }
+       else if (primeInt == 11){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Jack";
+                Char2speech.text = "Oh, nothing.";
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -82,46 +124,27 @@ public void next(){
                 Choice1b.SetActive(true); // function Choice1bFunct()
         }
 
-
 // ENCOUNTER AFTER CHOICE #1
 // 1a Dialogue 
-       else if (primeInt == 6){
+       else if (primeInt == 16){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Seagull";
-                Char2speech.text = "It does not matter. They all lead to the same place.";
+                Char2name.text = "Jack";
+                Char2speech.text = "You don’t want to go in there since it is really dark and has no windows. You won’t be able to see a thing.";
         }
 
-       else if (primeInt == 7){
+       else if (primeInt == 17){
                 Char1name.text = "YOU";
-                Char1speech.text = "What is up with all the riddles on this island?";
+                Char1speech.text = "I can take a torch so I can see something.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
 
-        else if (primeInt == 8){
+        else if (primeInt == 18){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Seagull";
-                Char2speech.text = "That is not a riddle, that is a fact.";
-        }
-       else if (primeInt == 9){
-                Char1name.text = "YOU";
-                Char1speech.text = "Whatever, I will try them one at a time.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 10){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Seagull";
-                Char2speech.text = "Good luck with that.";
-        }
-        else if (primeInt == 11){
-                Char1name.text = "YOU";
-                Char1speech.text = "Not again, with the good luck.";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "Jack";
+                Char2speech.text = "I would advise against that.";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene2Button.SetActive(true);
@@ -132,36 +155,12 @@ public void next(){
        else if (primeInt == 13){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Seagull";
-                Char2speech.text = "Not necessarily.";
+                Char2name.text = "Jack";
+                Char2speech.text = "That is my favorite room. That is where all the rum is held! Drink up!";
         }
        else if (primeInt == 14){
                 Char1name.text = "YOU";
-                Char1speech.text = "Are you saying I might die?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 15){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Seagull";
-                Char2speech.text = "We will all die at some point.";
-        }
-       else if (primeInt == 16){
-                Char1name.text = "YOU";
-                Char1speech.text = "Sure, but I don’t want to die today, which opening should I avoid.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 17){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Seagull";
-                Char2speech.text = "Listen. I am here just for the entertainment.";
-        }
-       else if (primeInt == 18){
-                Char1name.text = "YOU";
-                Char1speech.text = "Thanks for nothing";
+                Char1speech.text = "Oh wow! I thought for sure that the rum would be gone!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 nextButton.SetActive(false);
@@ -176,10 +175,10 @@ public void next(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch-scenes)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Which cave should I explore?";
+                Char1speech.text = "What is inside the door on the right?";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 5;
+                primeInt = 15;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
@@ -187,7 +186,7 @@ public void next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Will I die if I go into one of these caves?";
+                Char1speech.text = "What is inside the door on the left?";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 12;
@@ -199,10 +198,10 @@ public void next(){
 
         public void SceneChange1(){
                 // Goes to the Caves
-               SceneManager.LoadScene("Scene8a");
+               SceneManager.LoadScene("End_Lose");
         }
         public void SceneChange2(){
                 // Goes to Death Scene MAYBE?
-                SceneManager.LoadScene("Scene8b");
+                SceneManager.LoadScene("End_Lose");
         }
 }
