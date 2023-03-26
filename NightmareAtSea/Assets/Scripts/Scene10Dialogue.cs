@@ -62,7 +62,7 @@ public void next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Attendant";
-                Char2speech.text = "Are you ok?  I heard someone screaming.";
+                Char2speech.text = "Are you ok? I heard someone screaming.";
         }
        else if (primeInt == 3){
                 Char1name.text = "YOU";
@@ -100,7 +100,7 @@ public void next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Attendant";
-                Char2speech.text = "They say some dreams are window into the past.";
+                Char2speech.text = "They say some dreams are a window into the past.";
         }
 
        else if (primeInt == 9){

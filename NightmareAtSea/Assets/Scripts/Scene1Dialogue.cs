@@ -126,7 +126,7 @@ public void next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Seagull";
-                Char2speech.text = "Have you looked in a  mirror lately? You don’t look much better.";
+                Char2speech.text = "Have you looked in a mirror lately? You don’t look much better.";
                 primeInt = 14;
         }
        else if (primeInt == 15){
@@ -203,7 +203,7 @@ public void next(){
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "What do you know? You’re just a  flying a  rat!";
+                Char1speech.text = "What do you know? You’re just a flying a  rat!";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 10;

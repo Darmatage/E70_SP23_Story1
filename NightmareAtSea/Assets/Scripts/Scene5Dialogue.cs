@@ -102,7 +102,7 @@ public void next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ameila";
-                Char2speech.text = "Sorry, no can do. I love it here and don’t want to back to the hustle and bustle of life. You should join me.";
+                Char2speech.text = "Sorry, no can do. I love it here and don’t want to go back to the hustle and bustle of life. You should join me.";
         }
 
        else if (primeInt == 10){
@@ -121,7 +121,7 @@ public void next(){
 
         else if (primeInt == 12){
                 Char1name.text = "YOU";
-                Char1speech.text = "Why does everyone keep saying good luck to me. Is this island haunted or something.";
+                Char1speech.text = "Why does everyone keep saying good luck to me. Is this island haunted or something?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -130,7 +130,7 @@ public void next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ameila";
-                Char2speech.text = "You tell me.  Have you seen any dead people yet?";
+                Char2speech.text = "You tell me. Have you seen any dead people yet?";
         }
 
         else if (primeInt == 14){

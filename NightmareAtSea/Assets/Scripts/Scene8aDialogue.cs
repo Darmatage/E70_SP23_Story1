@@ -68,7 +68,7 @@ public void next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Volleyball";
-                Char2speech.text = "Thank goodness. Are you here to save me.";
+                Char2speech.text = "Thank goodness. Are you here to save me?";
         }
        else if (primeInt == 4){
                 Char1name.text = "YOU";

@@ -131,7 +131,7 @@ public void next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Cory";
-                Char2speech.text = "Yes, Sharks. Don’t worry though, they told me they want friends, not food";
+                Char2speech.text = "Yes, Sharks. Don’t worry though, they told me they want friends, not food.";
         }
        else if (primeInt == 12){
                 Char1name.text = "YOU";
