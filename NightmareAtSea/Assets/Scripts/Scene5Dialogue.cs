@@ -13,8 +13,8 @@ public class Scene5Dialogue : MonoBehaviour {
         public Text Char2speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
-       public GameObject ArtChar1b;
-       public GameObject ArtChar1c;
+        public GameObject ArtChar1b;
+        public GameObject ArtChar1c;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -29,8 +29,8 @@ public class Scene5Dialogue : MonoBehaviour {
 void Start(){  
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
-		 ArtChar1b.SetActive(false);
-		 ArtChar1c.SetActive(false);
+	ArtChar1b.SetActive(false);
+	ArtChar1c.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -57,7 +57,7 @@ public void next(){
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1a.SetActive(true);
+                ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -71,6 +71,8 @@ public void next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 4){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Ameila";
@@ -81,20 +83,6 @@ public void next(){
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
         }
-//        else if (primeInt == 5){
-//                 Char1name.text = "YOU";
-//                 Char1speech.text = "That is old. Do you have any advice for me about this island?";
-//                 Char2name.text = "";
-//                 Char2speech.text = "";
-//                 //gameHandler.AddPlayerStat(1);
-//         }
-//        else if (primeInt == 6){
-//                 Char1name.text = "";
-//                 Char1speech.text = "";
-//                 Char2name.text = "Turtle";
-//                 Char2speech.text = "To have enough of enough is always enough.";
-
-//         }
 
 // ENCOUNTER AFTER CHOICE #1
 // 1a Dialogue 
@@ -198,6 +186,8 @@ public void next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch-scenes)
         public void Choice1aFunct(){
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Does that plane work?  Can you fly me back to civilization?";
                 Char2name.text = "";
@@ -209,6 +199,8 @@ public void next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "I must have hit my head harder than I thought. Talking animals. Now I run into Amelia freaking Earhart.";
                 Char2name.text = "";

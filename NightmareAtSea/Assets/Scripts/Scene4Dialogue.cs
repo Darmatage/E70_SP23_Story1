@@ -100,6 +100,8 @@ public void next(){
 // ENCOUNTER AFTER CHOICE #1
 // 1a Dialogue 
        else if (primeInt == 9){
+                ArtChar1c.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Turtle";
@@ -137,6 +139,8 @@ public void next(){
                 Char2speech.text = "Early to bed and early to rise makes a man healthy, wealthy and wise.";
         }
        else if (primeInt == 14){
+                ArtChar1c.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Do you only talk in riddles?";
                 Char2name.text = "";
@@ -176,6 +180,8 @@ public void next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch-scenes)
         public void Choice1aFunct(){
+                ArtChar1a.SetActive(false);
+                ArtChar1c.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "What does that mean?";
                 Char2name.text = "";
@@ -187,6 +193,8 @@ public void next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+                ArtChar1a.SetActive(false);
+                ArtChar1c.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "That is not really helpful. If you are so wise, please tell me how to get off this island!";
                 Char2name.text = "";
@@ -199,7 +207,7 @@ public void next(){
         }
 
         public void SceneChange1(){
-                // Goes to the Lemur
+                // Goes to Amelia
                SceneManager.LoadScene("Scene5");
         }
         public void SceneChange2(){

@@ -57,7 +57,7 @@ public void next(){
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1a.SetActive(true);
+               ArtChar1b.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -75,26 +75,16 @@ public void next(){
                 Char1speech.text = "";
                 Char2name.text = "Oompa";
                 Char2speech.text = "Oh, hi there. How can I help you?";
+                ArtChar1b.SetActive(false);
+                ArtChar1a.SetActive(true);
+
+
                 // Turn off "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
         }
-//        else if (primeInt == 5){
-//                 Char1name.text = "YOU";
-//                 Char1speech.text = "That is old. Do you have any advice for me about this island?";
-//                 Char2name.text = "";
-//                 Char2speech.text = "";
-//                 //gameHandler.AddPlayerStat(1);
-//         }
-//        else if (primeInt == 6){
-//                 Char1name.text = "";
-//                 Char1speech.text = "";
-//                 Char2name.text = "Turtle";
-//                 Char2speech.text = "To have enough of enough is always enough.";
-
-//         }
 
 // ENCOUNTER AFTER CHOICE #1
 // 1a Dialogue 
@@ -129,6 +119,8 @@ public void next(){
                 Char1speech.text = "";
                 Char2name.text = "Oompa";
                 Char2speech.text = "I wouldn’t say I can’t help you.";
+                ArtChar1a.SetActive(false);
+                ArtChar1c.SetActive(true);
         }
         else if (primeInt == 14){
                 Char1name.text = "YOU";
@@ -177,6 +169,8 @@ public void next(){
                 Char1speech.text = "";
                 Char2name.text = "Oompa";
                 Char2speech.text = "Then I agree, you are crazy.";
+                ArtChar1a.SetActive(false);
+                ArtChar1c.SetActive(true);
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene2Button.SetActive(true);

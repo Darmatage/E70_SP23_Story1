@@ -15,8 +15,8 @@ public class Scene3Dialogue : MonoBehaviour {
        //public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
-       public GameObject ArtChar1b;
-       public GameObject ArtChar1c;
+        public GameObject ArtChar1b;
+        public GameObject ArtChar1c;
         public GameObject ArtBG1;
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -32,8 +32,8 @@ public class Scene3Dialogue : MonoBehaviour {
 void Start(){  
         DialogueDisplay.SetActive(false);
         ArtChar1a.SetActive(false);
-		 ArtChar1b.SetActive(false);
-		 ArtChar1c.SetActive(false);
+	ArtChar1b.SetActive(false);
+	ArtChar1c.SetActive(false);
         ArtBG1.SetActive(true);
         Choice1a.SetActive(false);
         Choice1b.SetActive(false);
@@ -61,7 +61,7 @@ public void next(){
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1a.SetActive(true);
+                ArtChar1c.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -75,6 +75,8 @@ public void next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 4){
+                ArtChar1c.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Lemur";
@@ -159,6 +161,8 @@ public void next(){
         }
 // a & b Dialogue 
        else if (primeInt == 18){
+                ArtChar1b.SetActive(false);
+                ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Lemur";
