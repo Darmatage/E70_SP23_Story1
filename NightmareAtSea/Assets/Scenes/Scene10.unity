@@ -1561,7 +1561,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_Text
-      value: Main Menu
+      value: Continue
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_FontData.m_MinSize

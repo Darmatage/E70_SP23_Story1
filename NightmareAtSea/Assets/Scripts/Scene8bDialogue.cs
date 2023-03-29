@@ -122,6 +122,7 @@ public void next(){
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
+                GameHandler.oneCoin = true; 
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";

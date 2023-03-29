@@ -14,6 +14,7 @@ public class GameHandler : MonoBehaviour {
         public AudioMixer mixer;
         public static float volumeLevel = 1.0f;
         private Slider sliderVolumeCtrl;
+        public static bool oneCoin = false; 
 
         void Awake(){ 
                 SetLevel (volumeLevel); 

@@ -142,8 +142,10 @@ public void next(){
                 Char2speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene2Button.SetActive(true);
-                NextScene1Button.SetActive(true);
+                if (GameHandler.oneCoin == true){ NextScene1Button.SetActive(true); }
+                else { NextScene2Button.SetActive(true); }
+                // NextScene2Button.SetActive(true);
+                // NextScene1Button.SetActive(true);
         }
 
 // 1b Dialogue 
@@ -184,8 +186,12 @@ public void next(){
                 Char2speech.text = "Good luck with that.";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene2Button.SetActive(true);
-                NextScene1Button.SetActive(true);
+                if (GameHandler.oneCoin == true){ NextScene1Button.SetActive(true); }
+                else { NextScene2Button.SetActive(true); }
+
+
+                // NextScene2Button.SetActive(true);
+                // NextScene1Button.SetActive(true);
         }
 
 	//KEEP THE MOST HOLY FINAL BRACKETT:
@@ -217,10 +223,10 @@ public void next(){
 
         public void SceneChange1(){
                 // Goes to the Caves
-               SceneManager.LoadScene("MainMenu");
+               SceneManager.LoadScene("End_Win");
         }
         public void SceneChange2(){
                 // Goes to Death Scene MAYBE?
-                SceneManager.LoadScene("Credits");
+                SceneManager.LoadScene("End_Lose");
         }
 }
