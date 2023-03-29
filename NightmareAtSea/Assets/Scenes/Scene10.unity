@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_Text
-      value: Credits
+      value: Continue
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_FontData.m_MinSize
@@ -581,7 +581,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_Text
-      value: Believe
+      value: Believe the Dream was Real
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_FontData.m_MinSize
@@ -589,7 +589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 45
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1775541172388322630, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -931,7 +931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_Text
-      value: "Don\u2019t believe"
+      value: "Don\u2019t Believe that the Dream was Real"
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_FontData.m_MinSize
@@ -939,7 +939,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 45
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 1775541172388322630, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

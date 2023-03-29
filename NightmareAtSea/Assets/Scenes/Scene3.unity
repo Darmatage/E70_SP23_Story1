@@ -136,7 +136,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_Text
-      value: Drink Water
+      value: Drink Dirty Water
+      objectReference: {fileID: 0}
+    - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1775541172388322630, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -659,7 +663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 866816212603256518, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_Text
-      value: Eat Fruit
+      value: Eat Old Fruit
       objectReference: {fileID: 0}
     - target: {fileID: 1775541172388322630, guid: ccc1a8bd1f669524d9747fd087e0d3cb, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

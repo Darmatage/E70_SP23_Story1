@@ -529,6 +529,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2146882576}
     m_Modifications:
+    - target: {fileID: 4467610970074541069, guid: 1de4f52d73939984bb93a0609f743bad, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467610970074541069, guid: 1de4f52d73939984bb93a0609f743bad, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 66377ac5314bf3442a702d56e60c33af, type: 3}
     - target: {fileID: 4467610970074541072, guid: 1de4f52d73939984bb93a0609f743bad, type: 3}
       propertyPath: m_Name
       value: ButtonMenu
@@ -628,6 +636,18 @@ PrefabInstance:
     - target: {fileID: 4467610970153754266, guid: 1de4f52d73939984bb93a0609f743bad, type: 3}
       propertyPath: m_Text
       value: Main Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467610970153754266, guid: 1de4f52d73939984bb93a0609f743bad, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467610970153754266, guid: 1de4f52d73939984bb93a0609f743bad, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4467610970153754266, guid: 1de4f52d73939984bb93a0609f743bad, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1de4f52d73939984bb93a0609f743bad, type: 3}
