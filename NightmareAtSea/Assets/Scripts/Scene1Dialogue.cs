@@ -61,9 +61,10 @@ public void next(){
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
+                // This creates the fadeIn/Out 
                 StartCoroutine(FadeOut(theDarkness));
 
-               ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -80,6 +81,8 @@ public void next(){
                 //gameHandler.AddPlayerStat(1);
         }
        else if (primeInt == 4){
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Seagull";
@@ -178,7 +181,7 @@ public void next(){
         }
 
         else if (primeInt == 16){
-                Char1name.text = "YOU";
+                Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Seagull";
                 Char2speech.text = "At least you fared better than this half-frozen person.";
@@ -191,6 +194,8 @@ public void next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch-scenes)
         public void Choice1aFunct(){
+                ArtChar1c.SetActive(false);
+                ArtChar1a.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "I was trying to but my Ship sank.";
                 Char2name.text = "";
@@ -202,6 +207,8 @@ public void next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+                ArtChar1c.SetActive(false);
+                ArtChar1a.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "What do you know? You’re just a flying a  rat!";
                 Char2name.text = "";

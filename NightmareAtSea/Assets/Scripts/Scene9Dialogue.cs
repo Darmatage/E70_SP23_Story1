@@ -57,7 +57,7 @@ public void next(){
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1a.SetActive(true);
+                ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -95,6 +95,8 @@ public void next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 8){
+                ArtChar1a.SetActive(false);
+                ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Jack";
@@ -174,6 +176,8 @@ public void next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch-scenes)
         public void Choice1aFunct(){
+                ArtChar1c.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "What is inside the door on the right?";
                 Char2name.text = "";
@@ -185,6 +189,8 @@ public void next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+                ArtChar1c.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "What is inside the door on the left?";
                 Char2name.text = "";

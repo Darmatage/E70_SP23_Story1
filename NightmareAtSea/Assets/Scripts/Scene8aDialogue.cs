@@ -57,7 +57,7 @@ public void next(){
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1a.SetActive(true);
+                ArtChar1c.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "What the heck is all of this.";
@@ -110,6 +110,8 @@ public void next(){
         }
 
         else if (primeInt == 10){
+                ArtChar1b.SetActive(false);
+                ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Volleyball";
@@ -152,6 +154,8 @@ public void next(){
                 Char2speech.text = "Good luck with that.";
         }
        else if (primeInt == 17){
+                ArtChar1b.SetActive(false);
+                ArtChar1a.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Stop. Please stop saying good luck like that.";
                 Char2name.text = "";
@@ -179,6 +183,8 @@ public void next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch-scenes)
         public void Choice1aFunct(){
+                ArtChar1c.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Do you have anything that can help me get off this island? What is in that box for example?";
                 Char2name.text = "";
@@ -190,6 +196,8 @@ public void next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+                ArtChar1c.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "I am not talking to a volleyball. This is crazy.";
                 Char2name.text = "";

@@ -57,7 +57,7 @@ public void next(){
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -71,6 +71,8 @@ public void next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 4){
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Seagull";
@@ -112,6 +114,8 @@ public void next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 10){
+                ArtChar1c.SetActive(false);
+                ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Seagull";
@@ -154,6 +158,8 @@ public void next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 17){
+                ArtChar1c.SetActive(false);
+                ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Seagull";
@@ -175,6 +181,7 @@ public void next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and switch-scenes)
         public void Choice1aFunct(){
+
                 Char1name.text = "YOU";
                 Char1speech.text = "Which cave should I explore?";
                 Char2name.text = "";

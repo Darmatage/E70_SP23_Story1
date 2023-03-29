@@ -57,7 +57,7 @@ public void next(){
                 // AudioSource.Play();
         }
         else if (primeInt == 2){
-               ArtChar1a.SetActive(true);
+                ArtChar1c.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -83,6 +83,8 @@ public void next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 6){
+                ArtChar1c.SetActive(false);
+                ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Attendant";
@@ -111,6 +113,8 @@ public void next(){
         }
 
         else if (primeInt == 10){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Attendant";
@@ -158,6 +162,8 @@ public void next(){
         }
 
         else if (primeInt == 17){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Attendant";
