@@ -22,7 +22,7 @@ public class Scene9Dialogue : MonoBehaviour {
         public GameObject NextScene2Button;
         public GameObject nextButton;
        //public GameHandler gameHandler;
-       //public AudioSource audioSource;
+        public AudioSource audioSource;
         private bool allowSpace = true;
 
 // initial visibility settings. Any new images or buttons need to also be SetActive(false);
@@ -63,6 +63,8 @@ public void next(){
                 Char1speech.text = "";
                 Char2name.text = "Pirate";
                 Char2speech.text = "Boo!";
+                
+                
         }
        else if (primeInt == 3){
                 Char1name.text = "YOU";
