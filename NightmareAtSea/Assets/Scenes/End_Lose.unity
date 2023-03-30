@@ -385,7 +385,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3, y: -118}
+  m_AnchoredPosition: {x: 3, y: -100}
   m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &596816347
@@ -421,9 +421,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You either weren't able to take a single piece of the treasure or you died
-    long before finding it. Either way, you woke up just as rich (or poor) as when
-    you fell asleep.
+  m_Text: "\rThank you for playing \u201CNightmare at Sea\u201D created by Chandler,
+    Kurt, and Leo. We hope you enjoyed it as much as we enjoyed creating it.  Unfortunately,
+    since you did not follow the words of the Turtle you did not win. Feel free to
+    play again and listen to the advice of the Wise old Turtle carefully."
 --- !u!222 &596816348
 CanvasRenderer:
   m_ObjectHideFlags: 0

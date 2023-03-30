@@ -242,7 +242,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -113}
+  m_AnchoredPosition: {x: 0, y: -97}
   m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &596816347
@@ -278,8 +278,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Your great desicion making and sensible gold policy has left you with a
-    real gold coin! Use this fortune wisely and enjoy your very much NOT sunk cruise!
+  m_Text: "Thank you for playing \u201CNightmare at Sea\u201D created by Chandler,
+    Kurt, and Leo. We hope you enjoyed it as much as we enjoyed creating it.  Just
+    like this game and as the wise turtle said we encourage you to take life in moderation!"
 --- !u!222 &596816348
 CanvasRenderer:
   m_ObjectHideFlags: 0
